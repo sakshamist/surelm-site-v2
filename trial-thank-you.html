@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="#004e9f" name="theme-color"/>
+<title>SureLM – धन्यवाद</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Noto+Sans+Devanagari:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  :root {
+    --primary: #004e9f;
+    --primary-fixed: #d7e3ff;
+    --ink: #1D1D1F;
+    --surface: #f9f9fb;
+    --card: #ffffff;
+    --on-surface: #1a1c1d;
+    --secondary: #5f5e60;
+    --surface-container-low: #f3f3f5;
+    --outline-variant: #c1c6d5;
+  }
+
+  body {
+    font-family: 'Inter', 'Noto Sans Devanagari', system-ui, -apple-system, sans-serif;
+    background: var(--surface);
+    color: var(--on-surface);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    min-height: 100vh;
+    min-height: 100dvh;
+    overflow-x: hidden;
+  }
+
+  .page {
+    max-width: 640px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 28px 20px 64px;
+    padding-left: max(20px, env(safe-area-inset-left));
+    padding-right: max(20px, env(safe-area-inset-right));
+  }
+
+  .brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 32px;
+  }
+
+  .brand svg { flex-shrink: 0; }
+
+  .brand span {
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+    color: var(--on-surface);
+  }
+
+  .card {
+    background: var(--card);
+    border: 1px solid rgba(193, 198, 213, 0.3);
+    border-radius: 24px;
+    padding: 30px 22px;
+    box-shadow: 0 20px 60px -15px rgba(0, 0, 0, 0.12);
+  }
+
+  .kicker {
+    display: block;
+    font-size: 12.5px;
+    font-weight: 600;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--primary);
+    margin-bottom: 14px;
+  }
+
+  h1 {
+    color: var(--on-surface);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.32;
+    letter-spacing: -0.01em;
+    text-wrap: balance;
+    margin-bottom: 14px;
+  }
+
+  .text {
+    color: var(--secondary);
+    font-size: 17px;
+    text-wrap: balance;
+    margin-bottom: 14px;
+  }
+
+  .back {
+    display: inline-block;
+    margin-top: 12px;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    background: var(--ink);
+    border: none;
+    border-radius: 9999px;
+    min-height: 52px;
+    padding: 14px 24px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+  }
+
+  .back:hover {
+    background: #000;
+    transform: translateY(-2px);
+    box-shadow: 0 12px 24px -8px rgba(0, 0, 0, 0.3);
+  }
+
+  @media (min-width: 520px) {
+    .page { padding-top: 56px; }
+    .card { padding: 40px 36px; }
+    h1 { font-size: 32px; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="brand">
+    <svg width="26" height="26" viewBox="0 0 24 24" fill="#004e9f" aria-hidden="true"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg>
+    <span>SureLM</span>
+  </div>
+
+  <div class="card">
+    <span class="kicker">SureLM आज़माएँ</span>
+    <h1>धन्यवाद!</h1>
+    <p class="text">आपकी जानकारी हमें मिल गई है।</p>
+    <p class="text">हमारी टीम जल्द ही आपसे संपर्क करेगी और SureLM के बारे में बताएगी।</p>
+    <a class="back" href="trial-form.html">दोबारा submit करें</a>
+  </div>
+</div>
+</body>
+</html>
