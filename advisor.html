@@ -1,48 +1,73 @@
 <!DOCTYPE html>
 
-<html class="light scroll-smooth" lang="en"><head>
+<html class="scroll-smooth" lang="en"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>SureLM for advisors | AI copilot for insurance</title>
+<meta name="description" content="SureLM is the AI copilot for insurance advisors. Get expertise as you work — sell and manage insurance with support right beside you."/>
+<link rel="canonical" href="https://surelm.com/advisor.html"/>
+<link rel="icon" href="favicon.svg" type="image/svg+xml"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
 <link rel="stylesheet" href="assets/css/site.css"/>
+<meta property="og:title" content="SureLM for advisors | AI copilot for insurance"/>
+<meta property="og:description" content="SureLM is the AI copilot for insurance advisors. Get expertise as you work — sell and manage insurance with support right beside you."/>
+<meta property="og:url" content="https://surelm.com/advisor.html"/>
+<meta property="og:type" content="website"/>
+<meta property="og:site_name" content="SureLM"/>
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="SureLM for advisors | AI copilot for insurance"/>
+<meta name="twitter:description" content="SureLM is the AI copilot for insurance advisors. Get expertise as you work — sell and manage insurance with support right beside you."/>
 </head>
 <body class="bg-surface text-on-surface antialiased overflow-x-hidden selection:bg-primary selection:text-white">
+<a id="main" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:bg-white focus:px-4 focus:py-2 focus:rounded-full focus:z-50 focus:shadow-lg" href="#content">Skip to content</a>
 <!-- TopAppBar -->
-<header class="fixed top-0 w-full z-50 bg-surface/80 dark:bg-surface/80 backdrop-blur-md border-b border-outline-variant/30">
+<header class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-md border-b border-outline-variant/30">
 <div class="flex justify-between items-center h-20 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
 <div class="flex items-center gap-6">
 <a class="flex items-center gap-2" href="index.html">
-<span class="material-symbols-outlined text-primary dark:text-primary-fixed-dim" data-icon="security" data-weight="fill" style="font-variation-settings: 'FILL' 1;">security</span>
-<span class="font-display-lg text-headline-lg-mobile tracking-tighter text-on-surface dark:text-on-surface font-bold">SureLM</span>
+<span class="material-symbols-outlined text-primary" data-icon="security" data-weight="fill" aria-hidden="true" focusable="false" style="font-variation-settings: 'FILL' 1;">security</span>
+<span class="font-display-lg text-headline-lg-mobile tracking-tighter text-on-surface font-bold">SureLM</span>
 </a>
-<nav class="hidden sm:flex items-center gap-1">
+<nav class="hidden sm:flex items-center gap-1" aria-label="Main">
 <a class="font-label-md text-label-md text-primary font-semibold bg-primary-fixed/50 rounded-full px-4 py-1.5 transition-all duration-300 flex items-center gap-1.5" href="advisor.html">
-<span class="material-symbols-outlined text-base" data-icon="forum">forum</span>
+<span class="material-symbols-outlined text-base" data-icon="forum" aria-hidden="true" focusable="false">forum</span>
 For advisors
 </a>
 <a class="font-label-md text-label-md text-on-secondary-fixed-variant hover:text-primary hover:bg-primary-fixed/50 rounded-full px-4 py-1.5 transition-all duration-300 flex items-center gap-1.5" href="institutions.html">
-<span class="material-symbols-outlined text-base" data-icon="account_balance">account_balance</span>
+<span class="material-symbols-outlined text-base" data-icon="account_balance" aria-hidden="true" focusable="false">account_balance</span>
 For banks &amp; insurers
 </a>
 </nav>
 </div>
-<div>
-<a class="font-body-md text-body-md text-primary dark:text-primary-fixed-dim hover:text-primary-container dark:hover:text-primary-fixed transition-colors duration-300 cursor-pointer" href="https://aiforbharat-six.vercel.app/sign-up">Login</a>
+<div class="flex items-center gap-2">
+<a class="font-body-md text-body-md text-primary hover:text-primary-container transition-colors duration-300 cursor-pointer" href="https://aiforbharat-six.vercel.app/sign-up">Login</a>
+<button id="mobile-nav-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav-panel" aria-label="Open menu" class="sm:hidden material-symbols-outlined text-on-surface p-2 hover:bg-surface-container rounded-full transition-colors">menu</button>
 </div>
 </div>
+<nav id="mobile-nav-panel" class="hidden sm:hidden border-t border-outline-variant/30 bg-surface/95 backdrop-blur-md" aria-label="Main mobile">
+<a class="flex items-center gap-2 px-margin-mobile py-4 font-label-md text-label-md text-primary hover:bg-surface-container" href="advisor.html">
+<span class="material-symbols-outlined text-base" data-icon="forum" aria-hidden="true" focusable="false">forum</span>
+For advisors
+</a>
+<a class="flex items-center gap-2 px-margin-mobile py-4 font-label-md text-label-md text-on-surface hover:bg-surface-container border-t border-outline-variant/20" href="institutions.html">
+<span class="material-symbols-outlined text-base" data-icon="account_balance" aria-hidden="true" focusable="false">account_balance</span>
+For banks &amp; insurers
+</a>
+</nav>
 </header>
-<main class="pt-32 pb-section-gap">
+<main id="content" class="pt-32 pb-section-gap">
 <!-- 01 Hero -->
 <section class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto flex flex-col items-center text-center mt-12 md:mt-24 mb-section-gap">
 <span class="font-label-md text-label-md text-primary uppercase tracking-widest mb-6">Your AI copilot for insurance</span>
 <h1 class="font-display-lg text-display-lg tracking-tighter text-on-surface max-w-[760px] mb-6 text-balance">Insurance expertise, right beside you.</h1>
 <p class="font-body-lg text-body-lg text-secondary max-w-[560px] mb-10 text-balance">Get the expertise you need, while you do the work.</p>
 <div class="flex flex-col sm:flex-row items-center gap-6 mb-16 w-full justify-center">
-<a class="bg-[#1D1D1F] text-white px-8 py-4 rounded-full font-label-md text-label-md transition-all duration-300 hover:bg-opacity-80 hover:-translate-y-0.5 hover:shadow-[0_12px_24px_-8px_rgba(0,0,0,0.3)] w-full sm:w-auto flex items-center justify-center gap-2" href="index.html">
+<a class="bg-[#1D1D1F] text-white px-8 py-4 rounded-full font-label-md text-label-md transition-all duration-300 hover:bg-opacity-80 hover:-translate-y-0.5 hover:shadow-[0_12px_24px_-8px_rgba(0,0,0,0.3)] w-full sm:w-auto flex items-center justify-center gap-2" href="http://apply.surelm.com">
                         Become an advisor
-                        <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+                        <span class="material-symbols-outlined text-sm" data-icon="arrow_forward" aria-hidden="true" focusable="false">arrow_forward</span>
 </a>
 </div>
 <p class="font-body-md text-body-md text-secondary max-w-md mb-16">You have the trust. SureLM brings the expertise.</p>
@@ -56,14 +81,14 @@ For banks &amp; insurers
 <div class="grid md:grid-cols-[200px_1fr]">
 <div class="hidden md:flex flex-col gap-6 p-6 border-r border-outline-variant/20 bg-surface-container-low/60">
 <div class="flex items-center gap-2">
-<span class="material-symbols-outlined text-primary" data-icon="security" data-weight="fill" style="font-variation-settings: 'FILL' 1;">security</span>
+<span class="material-symbols-outlined text-primary" data-icon="security" data-weight="fill" aria-hidden="true" focusable="false" style="font-variation-settings: 'FILL' 1;">security</span>
 <span class="font-label-md text-label-md font-bold text-on-surface">SureLM</span>
 </div>
 <div class="flex flex-col gap-4">
-<a class="flex items-center gap-3 font-label-md text-label-md text-secondary hover:text-primary" href="#"><span class="material-symbols-outlined text-lg" data-icon="dashboard">dashboard</span>Home</a>
-<a class="flex items-center gap-3 font-label-md text-label-md text-primary font-semibold bg-primary-fixed rounded-full px-3 py-1.5 -mx-3" href="#"><span class="material-symbols-outlined text-lg" data-icon="forum">forum</span>My copilot</a>
-<a class="flex items-center gap-3 font-label-md text-label-md text-secondary hover:text-primary" href="#"><span class="material-symbols-outlined text-lg" data-icon="group">group</span>Customers</a>
-<a class="flex items-center gap-3 font-label-md text-label-md text-secondary hover:text-primary" href="#"><span class="material-symbols-outlined text-lg" data-icon="menu_book">menu_book</span>Learn</a>
+<a class="flex items-center gap-3 font-label-md text-label-md text-secondary hover:text-primary" href="#"><span class="material-symbols-outlined text-lg" data-icon="dashboard" aria-hidden="true" focusable="false">dashboard</span>Home</a>
+<a class="flex items-center gap-3 font-label-md text-label-md text-primary font-semibold bg-primary-fixed rounded-full px-3 py-1.5 -mx-3" href="#"><span class="material-symbols-outlined text-lg" data-icon="forum" aria-hidden="true" focusable="false">forum</span>My copilot</a>
+<a class="flex items-center gap-3 font-label-md text-label-md text-secondary hover:text-primary" href="#"><span class="material-symbols-outlined text-lg" data-icon="group" aria-hidden="true" focusable="false">group</span>Customers</a>
+<a class="flex items-center gap-3 font-label-md text-label-md text-secondary hover:text-primary" href="#"><span class="material-symbols-outlined text-lg" data-icon="menu_book" aria-hidden="true" focusable="false">menu_book</span>Learn</a>
 </div>
 </div>
 <div class="p-6 md:p-8">
@@ -82,20 +107,20 @@ For banks &amp; insurers
 <p class="font-body-md text-body-md text-on-surface mb-3">Sure. Priya's health plan renews in 6 weeks. A family floater could cover her, her husband and their son — for less than the two separate plans they would otherwise need.</p>
 <div class="flex items-center justify-between gap-4 bg-white rounded-xl border border-outline-variant/30 px-4 py-3">
 <div class="flex items-center gap-3">
-<span class="material-symbols-outlined text-primary" data-icon="health_and_safety">health_and_safety</span>
+<span class="material-symbols-outlined text-primary" data-icon="health_and_safety" aria-hidden="true" focusable="false">health_and_safety</span>
 <div>
 <p class="font-label-md text-label-md font-semibold text-on-surface">Family Floater · Health</p>
 <p class="font-label-md text-label-md text-secondary">Covers Priya + 2</p>
 </div>
 </div>
-<span class="material-symbols-outlined text-secondary" data-icon="open_in_new">open_in_new</span>
+<span class="material-symbols-outlined text-secondary" data-icon="open_in_new" aria-hidden="true" focusable="false">open_in_new</span>
 </div>
 </div>
 </div>
 <div class="flex justify-end">
 <div class="flex items-center gap-3 bg-white border border-outline-variant/30 rounded-full pl-3 pr-2 py-2 max-w-full md:max-w-[70%]">
 <span class="font-body-md text-body-md text-secondary truncate">Ask me anything about your next sale…</span>
-<span class="material-symbols-outlined text-white bg-[#1D1D1F] rounded-full p-1.5 text-base" data-icon="arrow_upward">arrow_upward</span>
+<span class="material-symbols-outlined text-white bg-[#1D1D1F] rounded-full p-1.5 text-base" data-icon="arrow_upward" aria-hidden="true" focusable="false">arrow_upward</span>
 </div>
 </div>
 </div>
@@ -155,7 +180,7 @@ For banks &amp; insurers
 <p class="font-label-md text-label-md text-secondary mb-3">ALREADY COVERED</p>
 <div class="flex items-center justify-between gap-3 bg-surface-container-low rounded-xl border border-outline-variant/20 px-4 py-3 mb-6">
 <div class="flex items-center gap-3">
-<span class="material-symbols-outlined text-primary" data-icon="verified_user">verified_user</span>
+<span class="material-symbols-outlined text-primary" data-icon="verified_user" aria-hidden="true" focusable="false">verified_user</span>
 <p class="font-body-md text-body-md text-on-surface">Term plan</p>
 </div>
 <span class="font-label-md text-label-md text-secondary">2022</span>
@@ -183,7 +208,7 @@ For banks &amp; insurers
 <div class="bg-white border border-outline-variant/30 rounded-2xl p-4 mb-4">
 <div class="flex items-center justify-between gap-3 mb-3">
 <div class="flex items-center gap-3">
-<span class="material-symbols-outlined text-primary" data-icon="health_and_safety">health_and_safety</span>
+<span class="material-symbols-outlined text-primary" data-icon="health_and_safety" aria-hidden="true" focusable="false">health_and_safety</span>
 <div>
 <p class="font-label-md text-label-md font-semibold text-on-surface">Health First</p>
 <p class="font-label-md text-label-md text-secondary">Family health · covers 3</p>
@@ -192,25 +217,25 @@ For banks &amp; insurers
 <span class="font-label-md text-label-md bg-primary-fixed text-primary rounded-full px-3 py-1">Recommended</span>
 </div>
 <div class="flex items-center justify-between gap-3">
-<span class="material-symbols-outlined text-primary" data-icon="shield">shield</span>
+<span class="material-symbols-outlined text-primary" data-icon="shield" aria-hidden="true" focusable="false">shield</span>
 <div>
 <p class="font-label-md text-label-md font-semibold text-on-surface">Term Plus</p>
 <p class="font-label-md text-label-md text-secondary">Extra life cover · low premium</p>
 </div>
-<span class="material-symbols-outlined text-secondary" data-icon="chevron_right">chevron_right</span>
+<span class="material-symbols-outlined text-secondary" data-icon="chevron_right" aria-hidden="true" focusable="false">chevron_right</span>
 </div>
 </div>
 <div class="bg-surface-container-low rounded-2xl border border-outline-variant/20 p-4 mb-6">
 <p class="font-label-md text-label-md text-secondary mb-2">WHY THIS FITS RAHUL</p>
 <ul class="space-y-2">
-<li class="flex items-start gap-2 font-body-md text-body-md text-on-surface"><span class="material-symbols-outlined text-primary text-base" data-icon="check_circle">check_circle</span>Covers his wife and daughter in one plan</li>
-<li class="flex items-start gap-2 font-body-md text-body-md text-on-surface"><span class="material-symbols-outlined text-primary text-base" data-icon="check_circle">check_circle</span>Fits his monthly budget</li>
-<li class="flex items-start gap-2 font-body-md text-body-md text-on-surface"><span class="material-symbols-outlined text-primary text-base" data-icon="info">info</span>Be careful to explain waiting periods and cover limits in plain words</li>
+<li class="flex items-start gap-2 font-body-md text-body-md text-on-surface"><span class="material-symbols-outlined text-primary text-base" data-icon="check_circle" aria-hidden="true" focusable="false">check_circle</span>Covers his wife and daughter in one plan</li>
+<li class="flex items-start gap-2 font-body-md text-body-md text-on-surface"><span class="material-symbols-outlined text-primary text-base" data-icon="check_circle" aria-hidden="true" focusable="false">check_circle</span>Fits his monthly budget</li>
+<li class="flex items-start gap-2 font-body-md text-body-md text-on-surface"><span class="material-symbols-outlined text-primary text-base" data-icon="info" aria-hidden="true" focusable="false">info</span>Be careful to explain waiting periods and cover limits in plain words</li>
 </ul>
 </div>
 <div class="flex items-center gap-3 bg-surface-container-low border border-outline-variant/30 rounded-full pl-4 pr-2 py-2">
 <span class="font-body-md text-body-md text-secondary truncate">Start Rahul's health cover…</span>
-<span class="material-symbols-outlined text-white bg-[#1D1D1F] rounded-full p-1.5 text-base ml-auto" data-icon="arrow_upward">arrow_upward</span>
+<span class="material-symbols-outlined text-white bg-[#1D1D1F] rounded-full p-1.5 text-base ml-auto" data-icon="arrow_upward" aria-hidden="true" focusable="false">arrow_upward</span>
 </div>
 </div>
 </div>
@@ -244,7 +269,7 @@ For banks &amp; insurers
 <div class="flex items-center justify-between mb-6">
 <p class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface">My customers</p>
 <div class="hidden sm:flex items-center gap-2 bg-surface-container-low border border-outline-variant/30 rounded-full px-4 py-2">
-<span class="material-symbols-outlined text-secondary text-base" data-icon="search">search</span>
+<span class="material-symbols-outlined text-secondary text-base" data-icon="search" aria-hidden="true" focusable="false">search</span>
 <span class="font-label-md text-label-md text-secondary">Search</span>
 </div>
 </div>
@@ -303,28 +328,28 @@ For banks &amp; insurers
 <p class="font-label-md text-label-md text-primary uppercase tracking-widest mb-5">Up next</p>
 <div class="space-y-5">
 <div class="flex items-start gap-3">
-<span class="material-symbols-outlined text-primary" data-icon="event_repeat">event_repeat</span>
+<span class="material-symbols-outlined text-primary" data-icon="event_repeat" aria-hidden="true" focusable="false">event_repeat</span>
 <div>
 <p class="font-label-md text-label-md font-semibold text-on-surface">Renew Priya's health plan</p>
 <p class="font-label-md text-label-md text-secondary">In 6 weeks</p>
 </div>
 </div>
 <div class="flex items-start gap-3">
-<span class="material-symbols-outlined text-primary" data-icon="call">call</span>
+<span class="material-symbols-outlined text-primary" data-icon="call" aria-hidden="true" focusable="false">call</span>
 <div>
 <p class="font-label-md text-label-md font-semibold text-on-surface">Call Amit about the quote</p>
 <p class="font-label-md text-label-md text-secondary">Friday</p>
 </div>
 </div>
 <div class="flex items-start gap-3">
-<span class="material-symbols-outlined text-primary" data-icon="celebration">celebration</span>
+<span class="material-symbols-outlined text-primary" data-icon="celebration" aria-hidden="true" focusable="false">celebration</span>
 <div>
 <p class="font-label-md text-label-md font-semibold text-on-surface">Birthday greeting for Meera</p>
 <p class="font-label-md text-label-md text-secondary">Next month</p>
 </div>
 </div>
 <div class="flex items-start gap-3">
-<span class="material-symbols-outlined text-primary" data-icon="family_restroom">family_restroom</span>
+<span class="material-symbols-outlined text-primary" data-icon="family_restroom" aria-hidden="true" focusable="false">family_restroom</span>
 <div>
 <p class="font-label-md text-label-md font-semibold text-on-surface">Amit's family changed — reconsider his cover</p>
 <p class="font-label-md text-label-md text-secondary">This week</p>
@@ -340,46 +365,47 @@ For banks &amp; insurers
 <div class="bg-white rounded-3xl border border-outline-variant/30 py-20 px-6 flex flex-col items-center text-center">
 <h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface mb-4 text-balance">Insurance expertise, right beside you.</h2>
 <p class="font-body-md text-body-md text-secondary max-w-xl mx-auto mb-8 text-balance">Start today.</p>
-<a class="bg-[#1D1D1F] text-white px-10 py-4 rounded-full font-label-md text-label-md transition-all duration-300 hover:bg-opacity-80 hover:-translate-y-0.5 hover:shadow-[0_12px_24px_-8px_rgba(0,0,0,0.3)] flex items-center justify-center gap-2" href="index.html">
+<a class="bg-[#1D1D1F] text-white px-10 py-4 rounded-full font-label-md text-label-md transition-all duration-300 hover:bg-opacity-80 hover:-translate-y-0.5 hover:shadow-[0_12px_24px_-8px_rgba(0,0,0,0.3)] flex items-center justify-center gap-2" href="http://apply.surelm.com">
                         Become an advisor
-                        <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+                        <span class="material-symbols-outlined text-sm" data-icon="arrow_forward" aria-hidden="true" focusable="false">arrow_forward</span>
 </a>
 </div>
 </section>
 </main>
 <!-- Footer -->
-<footer class="w-full py-section-gap mt-section-gap border-t border-outline-variant/20 bg-surface-container-lowest dark:bg-surface-dim">
+<footer class="w-full py-section-gap mt-section-gap border-t border-outline-variant/20 bg-surface-container-lowest">
 <div class="flex flex-col items-center justify-center space-y-gutter px-margin-mobile md:px-margin-desktop w-full max-w-container-max mx-auto">
 <div class="flex items-center gap-2 mb-4">
-<span class="material-symbols-outlined text-secondary" data-icon="security" data-weight="fill" style="font-variation-settings: 'FILL' 1;">security</span>
+<span class="material-symbols-outlined text-secondary" data-icon="security" data-weight="fill" aria-hidden="true" focusable="false" style="font-variation-settings: 'FILL' 1;">security</span>
 <span class="font-headline-lg text-headline-lg font-bold text-on-surface">SureLM</span>
 </div>
 <p class="font-body-md text-body-md text-secondary text-center max-w-md mb-10">The AI copilot for insurance advisors.</p>
-<nav class="flex flex-col md:flex-row items-center gap-8 mb-16">
+<nav class="flex flex-col md:flex-row items-center gap-8 mb-16" aria-label="Footer">
 <a class="font-label-md text-label-md text-primary font-semibold flex items-center gap-1 group" href="advisor.html">
                         Advisor
-                        <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform" data-icon="arrow_forward">arrow_forward</span>
+                        <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform" data-icon="arrow_forward" aria-hidden="true" focusable="false">arrow_forward</span>
 </a>
-<a class="font-label-md text-label-md text-on-secondary-fixed-variant dark:text-on-tertiary-fixed-variant hover:text-primary dark:hover:text-primary-fixed transition-all cursor-pointer flex items-center gap-1 group" href="institutions.html">
+<a class="font-label-md text-label-md text-on-secondary-fixed-variant hover:text-primary transition-all cursor-pointer flex items-center gap-1 group" href="institutions.html">
                         Institution
-                        <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform" data-icon="arrow_forward">arrow_forward</span>
+                        <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform" data-icon="arrow_forward" aria-hidden="true" focusable="false">arrow_forward</span>
 </a>
-<a class="font-label-md text-label-md text-on-secondary-fixed-variant dark:text-on-tertiary-fixed-variant hover:text-primary dark:hover:text-primary-fixed transition-all cursor-pointer flex items-center gap-1 group" href="http://apply.surelm.com">
+<a class="font-label-md text-label-md text-on-secondary-fixed-variant hover:text-primary transition-all cursor-pointer flex items-center gap-1 group" href="http://apply.surelm.com">
                         Apply
-                        <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform" data-icon="arrow_forward">arrow_forward</span>
+                        <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform" data-icon="arrow_forward" aria-hidden="true" focusable="false">arrow_forward</span>
 </a>
-<a class="font-label-md text-label-md text-on-secondary-fixed-variant dark:text-on-tertiary-fixed-variant hover:text-primary dark:hover:text-primary-fixed transition-all cursor-pointer flex items-center gap-1 group" href="https://aiforbharat-six.vercel.app/sign-up">
+<a class="font-label-md text-label-md text-on-secondary-fixed-variant hover:text-primary transition-all cursor-pointer flex items-center gap-1 group" href="https://aiforbharat-six.vercel.app/sign-up">
                         Login
-                        <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform" data-icon="arrow_forward">arrow_forward</span>
+                        <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform" data-icon="arrow_forward" aria-hidden="true" focusable="false">arrow_forward</span>
 </a>
 </nav>
 <div class="flex flex-col md:flex-row items-center justify-between w-full pt-8 border-t border-outline-variant/10 gap-4">
 <div class="flex flex-wrap justify-center gap-6">
-<a class="font-label-md text-label-md text-on-secondary-fixed-variant dark:text-on-tertiary-fixed-variant hover:text-primary transition-all" href="#">Privacy Policy</a>
-<a class="font-label-md text-label-md text-on-secondary-fixed-variant dark:text-on-tertiary-fixed-variant hover:text-primary transition-all" href="#">Terms of Service</a>
+<a class="font-label-md text-label-md text-on-secondary-fixed-variant hover:text-primary transition-all" href="privacy.html">Privacy Policy</a>
+<a class="font-label-md text-label-md text-on-secondary-fixed-variant hover:text-primary transition-all" href="terms.html">Terms of Service</a>
 </div>
 <p class="font-label-md text-label-md text-secondary">© 2026 SureLM. All rights reserved.</p>
 </div>
 </div>
 </footer>
+<script src="assets/js/main.js"></script>
 </body></html>
