@@ -7,15 +7,18 @@ body {
   background-color: #FBF8F5;
   color: #1a1c1d;
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 a:focus-visible, button:focus-visible {
   outline: none;
-  box-shadow: 0 0 0 2px #004e9f;
+  box-shadow: 0 0 0 2px #3FBFBF;
   border-radius: 9999px;
 }
 
 img {
+  -webkit-user-select: none;
+  -moz-user-select: none;
   user-select: none;
   -webkit-user-drag: none;
 }
@@ -41,11 +44,11 @@ img {
   -webkit-backdrop-filter: blur(12px);
 }
 
-/* Scroll reveal */
+/* Orchestrated single reveal for hero-ish flow; reduce scatter */
 .reveal {
   opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+  transform: translateY(12px);
+  transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1), transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
 }
 .reveal.visible {
   opacity: 1;
@@ -95,4 +98,35 @@ img {
     box-shadow: 0 20px 48px -16px rgba(15,20,25,0.22);
     transform: translateY(-2px);
   }
+}
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .reveal {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+  .chevron-bounce,
+  .pulse-badge {
+    animation: none !important;
+  }
+}
+
+/* Subtle paper texture */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: -1;
+  background: radial-gradient(1200px 600px at 50% 0%, rgba(255,255,255,0.6) 0%, rgba(255,255,255,0) 70%),
+              radial-gradient(800px 400px at 80% 0%, rgba(242,166,90,0.04) 0%, rgba(242,166,90,0) 70%);
 }
